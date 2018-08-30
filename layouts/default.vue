@@ -26,10 +26,7 @@ export default {
     mixins: [layout],
     computed: {
         ...mapState(['pageData'])
-    },
-    mounted() {
-        console.log(this.pageData.layout)
-    },
+    }
 }
 </script>
 <style lang="scss">

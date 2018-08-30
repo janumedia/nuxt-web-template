@@ -3,10 +3,10 @@ import Vuex from 'vuex'
 const createStore = () => {
     
     const state = {
-        GA_CODE: "YOUR_GA_CODE",
+        GA_CODE:      "YOUR_GA_CODE",
         WEB_ADDRESS:  "YOUR_WEB_ADDRESS",
         pageData: {},
-        loading: false,
+        loading: true,
     }
 
     const getters = {}

@@ -48,24 +48,27 @@ export default {
             .then(() => {
                 if(to.name === from.name) {
                     window.scrollTo(0, 0)
-                    //this.$store.state.pageTitle = this.$store.state.pageData.name
-                    //this.$store.state.pageDesc = this.$store.state.pageData.pageDesc
-                    //store.dispatch("setPageData", {...pageData,});
-                } else 
-                {
-                    this.$store.dispatch("setPageData", {...this.pageData, title: "Loading"});
-                    this.$store.dispatch("setLoading", true);
                 }
+                this.$store.dispatch("setPageData", {...this.pageData, title: "Loading"});
+                this.$store.dispatch("setLoading", true);
                 if(next) next();
             });
         }
     },
     mounted(){
         this.$store.dispatch("setLoading", false);
-        if(!this.initiated) {
+        /*if(!this.initiated) {
             this.$store.dispatch("setInit", true);
             return;
-        }
+        }*/
+        //in case there're fade animation, should stopped
+        utils.clearFade();
+        //hide all
+        utils.setOpacity(document.querySelector(".logo"), 0);
+        utils.setOpacity(document.querySelector("#header"), 0);
+        utils.setOpacity(document.querySelector(".banner-info"), 0);
+        utils.setOpacity(document.querySelector(".container"), 0);
+        utils.setOpacity(document.querySelector("#footer"), 0);
 
         utils.fadeIn(document.querySelector(".logo"))
         .then(() => {
@@ -89,8 +92,7 @@ export default {
     watch: {
         "nextLink": function(to, from) {
             if(!from) return
-            if(from.path !== to.path) this.fadeOut(to, this.$route);
-           
+            if(from.path !== to.path) this.fadeOut(to, this.$route);           
         }
     }
 }

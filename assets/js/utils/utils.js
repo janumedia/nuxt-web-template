@@ -11,7 +11,10 @@ export default {
         el.style.opacity = 1;
         el.style.display = "block";
         return new Promise((resolve) => resolve);
-    },  
+    },
+    setOpacity(el, value) {
+        if(el) el.style.opacity = value;
+    }, 
     fadeOut(el, doneRemoveAfterDone) {
         el.style.opacity = el.style.opacity || 1;
         clearTimeout(intervalData[el]);
@@ -45,6 +48,12 @@ export default {
                     intervalData[el] = setTimeout(fade, 20);
                 }
             })();
+        })
+    },
+    clearFade() {
+        Object.keys(intervalData).map(key => {
+            clearTimeout(intervalData[key]);
+            intervalData[key] = null;
         })
     },
     delay(duration) {

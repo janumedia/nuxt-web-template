@@ -12,7 +12,6 @@ import Extras from "@/components/extras"
 
 export default {
     async asyncData({store, params, redirect, error, route}) {
-        console.log(process.env.BASE_URL, route.path)
         const valid = params.id ? params.id.indexOf(".") == -1 ? true : false : true;
         if(params.category && valid)
         {
@@ -32,7 +31,7 @@ export default {
                 return data;
 
             } catch(e) {
-                console.error("ERROR", e);
+                console.error("ERROR", e.response.statusText);
             }
         } 
         

@@ -69,7 +69,7 @@ export default {
     layout: "contact-layout",
     head() {
         return {
-            title: this.$store.state.pageTitle,
+            title: this.removeHTMLTags(this.pageData.title),
             link: [
                 { rel: "preload", href: "https://fonts.googleapis.com/icon?family=Material+Icons", as: "style" },
                 { rel: "stylesheet", href: "https://fonts.googleapis.com/icon?family=Material+Icons", bottom: true },
