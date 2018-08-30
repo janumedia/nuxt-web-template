@@ -6,9 +6,9 @@ This repo provide an example using Nuxt as SSR website development
 
 SSR (server side rendering), SEO optimized, GA (Google Analytics) integration
 
-# Components
+# Built Components
 
-TileGrid, ChessGrid, ListBox, Google Map, Google Place Reviews
+TileGrid, ChessGrid, ListBox, LazyImage, Google Map, Google Place Reviews
 
 # Data Structures
 
