@@ -1,5 +1,5 @@
 <template>
-    <div id="splash">
+    <div id="splash"  v-show="isLoading">
         <div class="splash-logo">
             <img src="/images/assets/logo.svg" alt="Nusa Penida" data-pin-nopin="true"/>
             <h1>Nusa Penida Tourism Board</h1>
@@ -7,18 +7,21 @@
     </div>
 </template>
 <script>
-import {mapState} from "vuex"
+//import {mapState} from "vuex"
 import utils from "@/assets/js/utils/utils"
 export default {
     computed: {
-        ...mapState(['loading'])
-    },
+        //...mapState(['loading'])
+        isLoading() {
+            return this.$store.state.loading;
+        }
+    }/*,
     watch: {
         "loading": function (newValue, oldValue) {
             if(newValue) utils.show(this.$el);
             else utils.hide(this.$el)
         }
-    }
+    }*/
 }
 </script>
 <style lang="scss" scoped>

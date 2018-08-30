@@ -43,9 +43,12 @@ import Button from "@/components/core/Button"
 import utils from "@/assets/js/utils/utils"
 
 export default {
-    async asyncData({store, error}) {
+    async asyncData({store, error, route}) {
         
         try {
+            const {path, name} = route;
+            store.dispatch("setNextLink", {path, name});
+
             const {data} = await axios.get(`${process.env.baseUrl}/data/contact.json`);
             store.dispatch("setPageData", data);
             
@@ -57,6 +60,7 @@ export default {
 
         } catch(e) {
             console.error("ERROR", e);
+            store.dispatch("setLoading", false);
             store.state.pageError = true;
             error({ statusCode: 404, message: 'Post NOT found' })
         } 

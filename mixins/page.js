@@ -1,6 +1,8 @@
 import {mapState} from "vuex";
 import utils from "@/assets/js/utils/utils"
 
+let fading;
+
 export default {
     head() {
         return {
@@ -32,7 +34,7 @@ export default {
             return `(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');ga('create', '${this.GA_CODE}', 'auto');ga('send', 'pageview');`
         },
         fadeOut(to, from, next) {
-            utils.fadeOut(document.querySelector("#footer"), true)
+            fading = utils.fadeOut(document.querySelector("#footer"), true)
             .then(() => {
                 return utils.fadeOut(document.querySelector(".container"), true)
             })
@@ -49,20 +51,19 @@ export default {
                 if(to.name === from.name) {
                     window.scrollTo(0, 0)
                 }
-                this.$store.dispatch("setPageData", {...this.pageData, title: "Loading"});
                 this.$store.dispatch("setLoading", true);
+                fading = null;
                 if(next) next();
             });
         }
     },
-    mounted(){
+    async mounted(){
+
+        //wait for pendong fading
+        if(fading) await fading;
+        
         this.$store.dispatch("setLoading", false);
-        /*if(!this.initiated) {
-            this.$store.dispatch("setInit", true);
-            return;
-        }*/
-        //in case there're fade animation, should stopped
-        utils.clearFade();
+        
         //hide all
         utils.setOpacity(document.querySelector(".logo"), 0);
         utils.setOpacity(document.querySelector("#header"), 0);
@@ -85,14 +86,18 @@ export default {
         })
     },
     beforeRouteLeave: function (to, from, next) {
+        this.$store.dispatch("setPageData", {...this.pageData, title: "Loading"});
         this.fadeOut(to, from, next)
     },
     //watch on nextLink change,
     //currently solution to listen if router path updated
     watch: {
         "nextLink": function(to, from) {
-            if(!from) return
-            if(from.path !== to.path) this.fadeOut(to, this.$route);           
+            if(!from || from.name != to.name) return;
+            if(from.path != to.path) {
+                this.$store.dispatch("setPageData", {...this.pageData, title: "Loading"});
+                this.fadeOut(to, this.$route);     
+            }      
         }
     }
 }

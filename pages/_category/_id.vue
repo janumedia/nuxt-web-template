@@ -21,7 +21,7 @@ export default {
                 
                 const url = `${process.env.baseUrl}/data/${params.category}${ params.id ? `/${params.id}`  : '' }.json`
                 const {data} = await axios.get(url);
-                
+
                 store.dispatch("setPageData", data);
                 
                 //must have props body and extras
@@ -34,7 +34,7 @@ export default {
                 console.error("ERROR", e.response.statusText);
             }
         } 
-        
+        store.dispatch("setLoading", false);
         store.state.pageError = true;
         error({ statusCode: 404, message: 'Post NOT found!' });
     },
