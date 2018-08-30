@@ -36,16 +36,31 @@
     </div>
 </template>
 <script>
+import axios from "axios"
+
 import page from "@/mixins/page"
-import data from "@/assets/data/index"
 import Button from "@/components/core/Button"
 import utils from "@/assets/js/utils/utils"
 
 export default {
-    fetch({store}) {
-        store.state.pageTitle = "Contact Us"
-        store.state.pageDesc = "Information & Reservation Board"
-        store.state.metaImage = "https://firebasestorage.googleapis.com/v0/b/nuxt-web-template.appspot.com/o/slides%2Fklingking-beach-2.jpg?alt=media&token=f7b4c2d0-39c5-482e-a929-5a696aa5be18"
+    async asyncData({store, error}) {
+        
+        try {
+            const {data} = await axios.get(`${process.env.baseUrl}/data/contact.json`);
+            store.dispatch("setPageData", data);
+            
+            //must have props body and extras
+            if(!data.body) data.body = null;
+            if(!data.extras) data.extras = null;
+            
+            return data;
+
+        } catch(e) {
+            console.error("ERROR", e);
+            store.state.pageError = true;
+            error({ statusCode: 404, message: 'Post NOT found' })
+        } 
+        
     },
     components: {
         Button

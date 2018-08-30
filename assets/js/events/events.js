@@ -1,16 +1,35 @@
+let callbackObj = {};
+
+const onCallback = e => {
+    callbackObj[e.type].map(f => f.call(e));
+}
+
 export const registerListener  = (e, f) => {
-    if(window.addEventListener) {
-        window.addEventListener(e, f)
-    } else {
-        window.attachEvent("on" + e, f)
+    if(!callbackObj[e])
+    {
+        callbackObj[e] = [];
+        if(window.addEventListener) {
+            window.addEventListener(e, onCallback)
+        } else {
+            window.attachEvent("on" + e, onCallback)
+        }
     }
+    callbackObj[e].push(f);
 }
 
 export const unRegisterListener  = (e, f) => {
-    if(window.removeEventListener) {
-        window.removeEventListener(e, f)
-    } else {
-        window.detachEvent("on" + e, f)
+    if(callbackObj[e]) {
+        const index = callbackObj[e].indexOf(f);
+        if(index > -1) callbackObj[e].splice(index, 1);
+        if(callbackObj[e].length <= 0)
+        {
+            if(window.removeEventListener) {
+                window.removeEventListener(e, onCallback)
+            } else {
+                window.detachEvent("on" + e, onCallback)
+            }
+            callbackObj[e] = null;
+        }
     }
 }
 

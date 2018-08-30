@@ -1,7 +1,7 @@
 module.exports = {
     menu: [
         {
-            name: "Home", path: "/", quote: "Cherysa Tour is a Bali and Nusa Penida Tour Agency"
+            name: "Home", path: "/"
         },
         {
             name: "Destinations", path: "/destinations", submenu: [
@@ -11,13 +11,10 @@ module.exports = {
             ]
         },
         {
-            name: "Hotels", path: "/hotels", quote: "Hotels in Nusa Penida Partnership with Cherysa Tour"
+            name: "Hotels", path: "/hotels"
         },
         {
             name: "Contact", path: "/contact"
-        },
-        {
-            name: "Sitemap", path: "/sitemap", mobileOnly: true
         }
     ]
 }

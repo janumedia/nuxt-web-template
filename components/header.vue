@@ -1,19 +1,12 @@
 <template>
     <header id="header">
         <div class="logo">
-            <nuxt-link to="/" title="Cherysa Tour">
+            <nuxt-link to="/" :title="title">
                 <figure>
-                    <img src="/images/assets/logo.svg" alt="Cherysa Tour" data-pin-nopin="true">
+                    <img src="/images/assets/logo.svg" :alt="title" data-pin-nopin="true">
                 </figure>    
             </nuxt-link>
         </div>
-        <!--div class="logo-small">
-            <nuxt-link to="/" title="Cherysa Tour">
-                <figure>
-                    <img src="/images/assets/logo.png" alt="Cherysa Tour" data-pin-nopin="true">
-                </figure>
-            </nuxt-link>
-        </div-->
         <div class="hamburger-menu">
             <div class="hamburger-menu-icon">
                 <span></span>
@@ -39,6 +32,11 @@
 <script>
 export default {
     props: ["list"],
+    data() {
+        return {
+            title: "Nusa Penida Tourism Board"
+        }
+    },
     methods: {
         getActiveClass(item) {
             if(item.submenu) {

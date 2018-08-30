@@ -4,15 +4,15 @@
         <div id="wrapper">
             <header-menu :list="list"/>
             <div class="banner-info">
-                <h1 v-show="$store.state.layout == 'default'" class="quote" v-html="$store.state.pageTitle"></h1>
-                <div v-show="$store.state.layout == 'default'">
-                    <p>{{$store.state.pageDesc}}</p>
+                <h1 v-show="!pageData.layout" class="quote" v-html="pageData.title"></h1>
+                <div v-show="!pageData.layout">
+                    <p>{{pageData.desc}}</p>
                 </div>
-                <div v-if="$store.state.layout != 'default'" class="container">
+                <div v-if="pageData.layout" class="container">
                     <nuxt></nuxt>
                 </div>
             </div>
-            <div v-if="$store.state.layout == 'default'" class="container">
+            <div v-if="!pageData.layout" class="container">
                 <nuxt></nuxt>
             </div>
             <footer-page/>
@@ -20,9 +20,16 @@
     </div>
 </template>
 <script>
+import {mapState} from "vuex"
 import layout from "@/mixins/layout"
 export default {
-    mixins: [layout]
+    mixins: [layout],
+    computed: {
+        ...mapState(['pageData'])
+    },
+    mounted() {
+        console.log(this.pageData.layout)
+    },
 }
 </script>
 <style lang="scss">

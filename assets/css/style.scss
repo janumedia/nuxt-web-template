@@ -1008,11 +1008,14 @@ address {
         margin-top: 0;
         padding-top: 2em;
     }
-    /*
+    
     .logo figure {
-        margin: 0 auto;
-        float: none;
-    }*/
+        margin: 0.3em 1.6em;
+    }
+    .logo {
+        display: inline-block;
+    }
+
     .menu {
         font-weight: 700;
         text-align: center;
@@ -1067,22 +1070,6 @@ address {
 
     #header {
         padding: 1em 0;
-    }
-
-    /*
-    .logo {
-        display: none;
-    }
-    .logo-small {
-        display: inline-block;
-    }
-    */
-    
-    .logo figure {
-        margin: 0.3em 1.6em;
-    }
-    .logo {
-        display: inline-block;
     }
 
     .hamburger-menu {

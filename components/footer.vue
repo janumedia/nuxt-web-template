@@ -64,7 +64,8 @@ export default {
     },
     watch: {
         "$route"(to, from) {
-            /*if(from.name === to.name)*/ registerListener("scroll", this.onScroll);
+            console.log('onRoute', to)
+            /*if(from.name === to.name)*/ //registerListener("scroll", this.onScroll);
         }
     },
     beforeDestroy() {

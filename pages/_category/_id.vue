@@ -12,25 +12,27 @@ import Extras from "@/components/extras"
 
 export default {
     async asyncData({store, params, redirect, error, route}) {
-        console.log(process.env.BASE_URL)
+        console.log(process.env.BASE_URL, route.path)
         const valid = params.id ? params.id.indexOf(".") == -1 ? true : false : true;
         if(params.category && valid)
         {
             try {
+                const {path, name} = route;
+                store.dispatch("setNextLink", {path, name});
+                
                 const url = `${process.env.baseUrl}/data/${params.category}${ params.id ? `/${params.id}`  : '' }.json`
                 const {data} = await axios.get(url);
                 
-                store.state.pageTitle = data.title;
-                store.state.pageDesc = data.desc;
-                store.state.pageData = {name: data.title, pageDesc:data.desc};
-                store.state.metaImage = data.metaImage;
-                store.state.layout = data.layout || 'default';
+                store.dispatch("setPageData", data);
                 
                 //must have props body and extras
-                return {...data, body:data.body || null, extras:data.extras || null};
+                if(!data.body) data.body = null;
+                if(!data.extras) data.extras = null;
+
+                return data;
 
             } catch(e) {
-                console.error("ERROR");
+                console.error("ERROR", e);
             }
         } 
         

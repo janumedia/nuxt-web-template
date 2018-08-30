@@ -1,6 +1,6 @@
 <template>
-    <section v-if="list" :class="$store.state.layout == 'default' ? 'section-body' : ''">
-        <div v-if="$store.state.layout == 'default'" class="preheader-hidden">
+    <section v-if="list" :class="!$store.state.pageData.layout ? 'section-body' : ''">
+        <div v-if="!$store.state.pageData.layout" class="preheader-hidden">
             <h2>Hot Tour Destination in Nusa Penida</h2>
         </div>
         <div v-for="(item, index) in list" :key="`b_${index}`" :class="index > 0? 'next' : ''">

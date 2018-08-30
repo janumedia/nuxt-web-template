@@ -141,7 +141,7 @@ export default {
     },
     beforeDestroy(){
         unRegisterListener("scroll", this.onScroll);
-        registerListener("resize", this.onScroll);
+        unRegisterListener("resize", this.onScroll);
     }
 }
 </script>

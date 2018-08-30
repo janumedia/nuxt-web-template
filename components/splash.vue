@@ -1,8 +1,8 @@
 <template>
     <div id="splash" v-if="$store.state.loading">
         <div class="splash-logo">
-            <img src="/images/assets/logo.svg" alt="Cherysa Tour" data-pin-nopin="true"/>
-            <h1>Cherysa Tour | A Bali and Nusa Penida Tour Agency</h1>
+            <img src="/images/assets/logo.svg" alt="Nusa Penida" data-pin-nopin="true"/>
+            <h1>Nusa Penida Tourism Board</h1>
         </div>
     </div>
 </template>
