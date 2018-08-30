@@ -5,7 +5,7 @@ module.exports = {
         htmlAttrs: {
             lang: 'en'
         },
-        title: "Web Template Example with Nuxt",
+        title: webTitle,
         titleTemplate: `%s | ${webTitle}`,
         meta: [
             { charset: 'utf-8' },
