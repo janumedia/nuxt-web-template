@@ -1,0 +1,32 @@
+{
+    "title": "Hotels in Nusa Penida",
+    "desc": "Here our selected hotels and bungalows for stay in Nusa Penida",
+    "metaImage": "https://firebasestorage.googleapis.com/v0/b/nuxt-web-template.appspot.com/o/3x2%2Fhotel-semabu-hills-mid.jpg?alt=media&token=951d7b8e-6419-431c-8f98-fa748fe855df",
+    "body": [
+        {
+            "tilesGrid": [
+                {
+                    "name": "Semabu Hills Hotel",
+                    "img": "https://firebasestorage.googleapis.com/v0/b/nuxt-web-template.appspot.com/o/3x2%2Fhotel-semabu-hills-mid.jpg?alt=media&token=951d7b8e-6419-431c-8f98-fa748fe855df",
+                    "desc": "It can be argued that Bali is as close to heaven on earth as it gets and we at Semabu Hills have put in place the crowning glory of this picturesque getaway.\n\nJust 30 minutes off the east coast of Bali on the tropical island of Nusa Penida, Semabu Hills is proud to host you and give you an experience to cherish.",
+                    "primaryUrl": "/contact",
+                    "primaryBtnLabel": "Book"
+                },
+                {
+                    "name": "Bintang Bungalow Hotel",
+                    "img": "https://firebasestorage.googleapis.com/v0/b/nuxt-web-template.appspot.com/o/3x2%2Fhotel-bintang-bungalows-mid.jpg?alt=media&token=94501405-146b-4216-a3b7-41dacbd09020",
+                    "desc": "Bintang Bungalow is located in Toyapakeh just about 800 meters from Crystal Bay. The hotel is a 15-minutes drive to Gamat Bay and 30-minutes to Angel's Billabong.\n\nFeatures an outdoor pool. You can enjoy meals at the restaurant at the accommodation.",
+                    "primaryUrl": "/contact",
+                    "primaryBtnLabel": "Book"
+                },
+                {
+                    "name": "Caspla Beach Hotel",
+                    "img": "https://firebasestorage.googleapis.com/v0/b/nuxt-web-template.appspot.com/o/3x2%2Fhotel-caspla-beach-mid.jpg?alt=media&token=24fb0632-1f9d-4012-9277-fcc94103bc27",
+                    "desc": "Caspla Beach Hotel, Restaurant & Bar is built seashore side on the easthern most tip of Bali, that is Nusa Penida Island.\n\nEnjoy luxury hotels on east Bali and an unforgettable holiday in Caspla Beach Hotel, Bar & Restaurant unique, elegant, tropical style, ocean front bungalows. the hotel building full of wood, here you can enjoy free pool, eating at the beachside restaurant.",
+                    "primaryUrl": "/contact",
+                    "primaryBtnLabel": "Book"
+                }
+            ]
+        }
+    ]
+}

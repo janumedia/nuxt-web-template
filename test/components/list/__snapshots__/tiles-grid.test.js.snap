@@ -1,0 +1,111 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`tiles-grid.vue should render tiles-grid  3 columns 1`] = `
+<div class="tiles-container">
+  <ul class="tiles tiles--col3">
+    <li class="tile last-2nd" style="height: 0px;">
+      <linkedimage-stub title="Name A" url="/link/to/a" src="imageA.jpg"></linkedimage-stub>
+      <div class="tile__info">
+        <h3>Name A</h3>
+        <div>Description A</div>
+        <div class="button-group" style="position: absolute; bottom: 14px; left: 0px; right: 0px;">
+          <!---->
+          <button-stub url="/link/to/a" label="View details"></button-stub>
+          <br>
+          <br>
+        </div>
+      </div>
+    </li>
+    <li class="tile" style="height: 0px;">
+      <linkedimage-stub title="Name B" url="/link/to/b" src="imageB.jpg"></linkedimage-stub>
+      <div class="tile__info">
+        <h3>Name B</h3>
+        <div>Description B</div>
+        <div class="button-group" style="position: absolute; bottom: 14px; left: 0px; right: 0px;">
+          <!---->
+          <button-stub url="/link/to/b" label="View details"></button-stub>
+          <br>
+          <br>
+        </div>
+      </div>
+    </li>
+    <li class="tile" style="height: 0px;">
+      <linkedimage-stub title="Name C" url="/link/to/c" src="imageC.jpg"></linkedimage-stub>
+      <div class="tile__info">
+        <h3>Name C</h3>
+        <div>Description C</div>
+        <div class="button-group" style="position: absolute; bottom: 14px; left: 0px; right: 0px;">
+          <!---->
+          <button-stub url="/link/to/c" label="View details"></button-stub>
+          <br>
+          <br>
+        </div>
+      </div>
+    </li>
+  </ul>
+  <div class="clearfix"></div>
+</div>
+`;
+
+exports[`tiles-grid.vue should render tiles-grid 2 colummns with thumbnailMode 1`] = `
+<div class="tiles-container">
+  <ul class="tiles tiles--col2">
+    <li class="tile tile--thumbnail-mode last-2nd">
+      <linkedimage-stub thumbnailmode="true" title="Name A" url="/link/to/a" src="imageA.jpg"></linkedimage-stub>
+      <!---->
+    </li>
+    <li class="tile tile--thumbnail-mode">
+      <linkedimage-stub thumbnailmode="true" title="Name B" url="/link/to/b" src="imageB.jpg"></linkedimage-stub>
+      <!---->
+    </li>
+  </ul>
+  <div class="clearfix"></div>
+</div>
+`;
+
+exports[`tiles-grid.vue should render tiles-grid 2 columns 1`] = `
+<div class="tiles-container">
+  <ul class="tiles tiles--col2">
+    <li class="tile" style="height: 0px;">
+      <linkedimage-stub title="Name A" url="/link/to/a" src="imageA.jpg"></linkedimage-stub>
+      <div class="tile__info">
+        <h3>Name A</h3>
+        <div>Description A</div>
+        <div class="button-group" style="position: absolute; bottom: 14px; left: 0px; right: 0px;">
+          <!---->
+          <button-stub url="/link/to/a" label="View details"></button-stub>
+          <br>
+          <br>
+        </div>
+      </div>
+    </li>
+    <li class="tile" style="height: 0px;">
+      <linkedimage-stub title="Name B" url="/link/to/b" src="imageB.jpg"></linkedimage-stub>
+      <div class="tile__info">
+        <h3>Name B</h3>
+        <div>Description B</div>
+        <div class="button-group" style="position: absolute; bottom: 14px; left: 0px; right: 0px;">
+          <!---->
+          <button-stub url="/link/to/b" label="View details"></button-stub>
+          <br>
+          <br>
+        </div>
+      </div>
+    </li>
+    <li class="tile last-center" style="height: 0px;">
+      <linkedimage-stub title="Name C" url="/link/to/c" src="imageC.jpg"></linkedimage-stub>
+      <div class="tile__info">
+        <h3>Name C</h3>
+        <div>Description C</div>
+        <div class="button-group" style="position: absolute; bottom: 14px; left: 0px; right: 0px;">
+          <!---->
+          <button-stub url="/link/to/c" label="View details"></button-stub>
+          <br>
+          <br>
+        </div>
+      </div>
+    </li>
+  </ul>
+  <div class="clearfix"></div>
+</div>
+`;

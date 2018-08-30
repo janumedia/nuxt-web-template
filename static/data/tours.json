@@ -1,0 +1,50 @@
+{
+    "title": "Tours",
+    "desc": "Cherysa Bali Tour sitemap pages navigation",
+    "metaImage": "https://www.cherysabalitour.com/images/contents/raja-lima2.jpg",
+    "body": [
+        {
+            "name": "Gallery",
+            "slides": [
+                {"img": "images/contents/peguyangan-waterfall-1.jpg", "credit": "@alexjgillett"},
+                {"img": "images/contents/peguyangan-waterfall-2.jpg", "credit": "@lolapantravels"},
+                {"img": "images/contents/peguyangan-waterfall-3.jpg", "credit": "@wanderersandwarriors"},
+                {"img": "images/contents/peguyangan-waterfall-4.jpg", "credit": "@wanderersandwarriors"},
+                {"img": "images/contents/peguyangan-waterfall-5.jpg", "credit": "@thenusapenida"},
+                {"img": "images/contents/peguyangan-waterfall-6.jpg", "credit": "@wanderersandwarriors"}
+            ]
+        },
+        {
+            "name": "Packages",
+            "tilesGrid": [
+                {
+                    "id":0,
+                    "name": "One Day Tour Nusa Penida",
+                    "img": "images/contents/crystal-bay-beach-mid-sq.jpg",
+                    "desc": "One day tour exploring Nusa Penida:\nTree of Love and Klingking Beach,\nBroken Beach and Angel Billabong,\nCrystal Bay Beach\n\nStart from Rp 400.000",
+                    "btnLabel": "More Details",
+                    "url": "/tours/one-day-tour-nusa-penida"
+                },
+                {
+                    "id": 1,
+                    "name": "Snorkeling at Nusa Penida Beach",
+                    "img": "images/contents/snorkeling-crystal-bay-beach-mid-sq.jpg",
+                    "desc": "Enjoy beautiful underwater scene in Nusa Penida Beach\nIf you're lucky you may met Manta Ray or Mola-mola\n\nStart from Rp 600.000",
+                    "btnLabel": "More Details",
+                    "url": "/tours/one-day-tour-nusa-penida-plus-snorkeling"
+                }
+            ]
+        },
+        {
+            "googleMap": {
+                "lat": -8.7089515,
+                "long": 115.583926
+            }
+        },
+        {
+            "googleReview": {
+                "placeID": "ChIJf6i9TaF20i0R8_IaKI-kqMQ"
+            }
+        }
+    ]
+}

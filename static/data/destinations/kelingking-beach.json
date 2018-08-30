@@ -1,0 +1,31 @@
+{
+    "title": "Kelingking Beach",
+    "desc": "Kelingking Beach is a hidden beach in the village of Bunga Mekar, on the southwestern coast of Nusa Penida island. You can enjoy one of the most breath-taking views over the hills and small strip of white sand from atop a hill of the same name. The sight features a limestone headland covered in green, against the deep blue waters of the open Indian Ocean. This unique formation is reminiscent of a Tyrannosaurus Rex head, hence its nickname ‘T-Rex Bay’.",
+    "metaImage": "https://firebasestorage.googleapis.com/v0/b/nuxt-web-template.appspot.com/o/slides%2Fklingking-beach.jpg?alt=media&token=0608592e-0bca-43ce-b535-857065b67ef5",
+    "body":[
+        {
+            "listBox": [
+                {
+                    "name": "Gallery",
+                    "slides": [
+                        {"img": "https://firebasestorage.googleapis.com/v0/b/nuxt-web-template.appspot.com/o/slides%2Fklingking-beach-2.jpg?alt=media&token=f7b4c2d0-39c5-482e-a929-5a696aa5be18", "credit": "@mihtiander"},
+                        {"img": "https://firebasestorage.googleapis.com/v0/b/nuxt-web-template.appspot.com/o/slides%2Fklingking-beach.jpg?alt=media&token=0608592e-0bca-43ce-b535-857065b67ef5", "credit": "@journeyera"},
+                        {"img": "https://firebasestorage.googleapis.com/v0/b/nuxt-web-template.appspot.com/o/slides%2Fklingking-beach-3.jpg?alt=media&token=0223f414-bdd0-4d6c-9fd4-619e59a743dc", "credit": "@nicmorley"}
+                    ]
+                },
+                {
+                    "googleMap": {
+                        "lat": -8.7527242,
+                        "long": 115.4697092
+                    }
+                },
+                {
+                    "name": "Reviews",
+                    "googleReview": {
+                        "placeID": "ChIJPeFviSBH0i0R0h1hnHjxmFw"
+                    }
+                }
+            ]
+        }
+    ]
+}

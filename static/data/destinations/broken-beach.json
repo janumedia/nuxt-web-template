@@ -1,0 +1,30 @@
+{
+    "title": "Broken Beach",
+    "desc": "Broken Beach (Pasih Uug) is a scenic coastal formation on the southwestern edge of Nusa Penida island. The spot is marked by a hilly arch-like rock formation, which is the distinguishable landmark of the area. Set over the crashing waves of the open Indian Ocean, Broken Beach is a great spot for travel photographers and panoramic view seekers. The adjacent area is also home to grey long-tailed macaques. If you’re lucky, you may spot silhouettes of giant mantas near the surface of the deep blue water.",
+    "metaImage": "https://firebasestorage.googleapis.com/v0/b/nuxt-web-template.appspot.com/o/slides%2Fbroken-beach.jpg?alt=media&token=d5c744e6-9fd4-4df0-8552-03659675f6d7",
+    "body":[
+        {
+            "listBox": [
+                {
+                    "name": "Gallery",
+                    "slides": [
+                        {"img": "https://firebasestorage.googleapis.com/v0/b/nuxt-web-template.appspot.com/o/slides%2Fbroken-beach.jpg?alt=media&token=d5c744e6-9fd4-4df0-8552-03659675f6d7"},
+                        {"img": "https://firebasestorage.googleapis.com/v0/b/nuxt-web-template.appspot.com/o/slides%2Fbroken-beach-2.jpg?alt=media&token=c2a75020-759a-4cb0-aef1-e587b7e1e021"}
+                    ]
+                },
+                {
+                    "googleMap": {
+                        "lat": -8.7324634,
+                        "long": 115.449011
+                    }
+                },
+                {
+                    "name": "Reviews",
+                    "googleReview": {
+                        "placeID": "ChIJdX5lGBVu0i0RQ7h9o4ZPdlU"
+                    }
+                }
+            ]
+        }
+    ]
+}

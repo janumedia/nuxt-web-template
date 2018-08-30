@@ -1,0 +1,78 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`LinkedImage.vue should render LinkedImage with http url 1`] = `
+<div class="linked-image ">
+  <a href="http://domain.name" target="_blank" title="image title">
+    <lazyimage-stub src="image.jpg" title="image title"></lazyimage-stub>
+  </a>
+</div>
+`;
+
+exports[`LinkedImage.vue should render LinkedImage with router-link 1`] = `
+<div class="linked-image ">
+  <nuxtlink-stub to="/link/to/page" title="image title">
+    <lazyimage-stub src="image.jpg" title="image title"></lazyimage-stub>
+    <!---->
+  </nuxtlink-stub>
+</div>
+`;
+
+exports[`LinkedImage.vue should render LinkedImage with square mode 1`] = `
+<div class="linked-image ">
+  <a title="image title">
+    <div class="lazy-image">
+      <div>
+        <img src="/images/assets/2x2-placeholder.svg" data-src="image.jpg" alt="image title" data-pin-nopin="true">
+      </div>
+    </div>
+    <!---->
+  </a>
+</div>
+`;
+
+exports[`LinkedImage.vue should render LinkedImage with thumbnail mode 1`] = `
+<div class="linked-image ">
+  <a title="image title">
+    <div class="lazy-image">
+      <div>
+        <img src="/images/assets/3x2-placeholder.svg" data-src="image.jpg" alt="image title" data-pin-nopin="true">
+      </div>
+    </div>
+    <div class="linked-image__title"><span>image title</span></div>
+  </a>
+</div>
+`;
+
+exports[`LinkedImage.vue should render LinkedImage with verticalAlign 1`] = `
+<div class="linked-image linked-image--vertical-align">
+  <a title="image title">
+    <div class="lazy-image">
+      <div>
+        <img src="/images/assets/3x2-placeholder.svg" data-src="image.jpg" alt="image title" data-pin-nopin="true">
+      </div>
+    </div>
+    <!---->
+  </a>
+</div>
+`;
+
+exports[`LinkedImage.vue should render LinkedImage without url 1`] = `
+<div
+  class="linked-image "
+>
+  <span>
+    <div
+      class="lazy-image"
+    >
+      <div>
+        <img
+          alt="image title"
+          data-pin-nopin="true"
+          data-src="image.jpg"
+          src="/images/assets/3x2-placeholder.svg"
+        />
+      </div>
+    </div>
+  </span>
+</div>
+`;

@@ -1,0 +1,68 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`list-box.vue should render list-box with 3 items 1`] = `
+<div class="list-box">
+  <div class="list-box__item list-box__item--hide">
+    <!---->
+    <!---->
+    <!---->
+    <!---->
+    <!---->
+    <!---->
+    <!---->
+    <!---->
+    <!---->
+    <div>
+      <slideimages-stub list="[object Object],[object Object]"></slideimages-stub>
+    </div>
+    <!---->
+    <!---->
+    <!---->
+    <!---->
+    <!---->
+    <!---->
+  </div>
+  <div class="list-box__item list-box__item--hide">
+    <!---->
+    <!---->
+    <!---->
+    <!---->
+    <!---->
+    <!---->
+    <!---->
+    <!---->
+    <!---->
+    <!---->
+    <div>
+      <googlemap-stub lat="-8.7527242" long="115.4697092"></googlemap-stub>
+      <br>
+      <button-stub url="https://www.google.com/maps/dir//-8.7527242,115.4697092" label="Get Direction"></button-stub>
+    </div>
+    <!---->
+    <!---->
+    <!---->
+    <!---->
+    <!---->
+  </div>
+  <div class="list-box__item list-box__item--hide">
+    <!---->
+    <!---->
+    <h3 class="list-box__item-name">Reviews</h3>
+    <!---->
+    <!---->
+    <!---->
+    <!---->
+    <!---->
+    <!---->
+    <!---->
+    <!---->
+    <div>
+      <googlereview-stub placeid="GOOGLE_PLACE_ID"></googlereview-stub>
+    </div>
+    <!---->
+    <!---->
+    <!---->
+    <!---->
+  </div>
+</div>
+`;

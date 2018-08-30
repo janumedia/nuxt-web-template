@@ -1,0 +1,32 @@
+{
+    "title": "Angel Billabong",
+    "desc": "A spectacular rock formation on Nusa Penida island's southwestern cliff edges. It's nearby Pasih Uug (Broken Beach), another popular site with unique limestone formations. The naturally formed rock lagoon offers a scenic seascape. You can descend into its crystal-clear rock pools for a swim or a soak",
+    "metaImage": "https://firebasestorage.googleapis.com/v0/b/nuxt-web-template.appspot.com/o/slides%2Fangel-billabong-2.jpg?alt=media&token=faf03c2a-0472-44ae-bab6-2766037b84c7",
+    "body":[
+        {
+            "listBox": [
+                {
+                    "name": "Gallery",
+                    "slides": [
+                        {"img": "https://firebasestorage.googleapis.com/v0/b/nuxt-web-template.appspot.com/o/slides%2Fangel-billabong-2.jpg?alt=media&token=faf03c2a-0472-44ae-bab6-2766037b84c7"},
+                        {"img": "https://firebasestorage.googleapis.com/v0/b/nuxt-web-template.appspot.com/o/slides%2Fangel-billabong.jpg?alt=media&token=9d4b2f99-3667-464e-9d6a-5c4b6850bf84"},
+                        {"img": "https://firebasestorage.googleapis.com/v0/b/nuxt-web-template.appspot.com/o/slides%2Fangel-billabong-3.jpg?alt=media&token=49c5afc9-a30a-46ad-890a-578dc3e6545c"},
+                        {"img": "https://firebasestorage.googleapis.com/v0/b/nuxt-web-template.appspot.com/o/slides%2Fangel-billabong-4.jpg?alt=media&token=7e55644c-e571-4e3a-a941-d3ec3998b0a1"}
+                    ]
+                },
+                {
+                    "googleMap": {
+                        "lat": -8.733426,
+                        "long": 115.4470798
+                    }
+                },
+                {
+                    "name": "Reviews",
+                    "googleReview": {
+                        "placeID": "ChIJiZ8Mtmpu0i0R_bG0qk8i-tk"
+                    }
+                }
+            ]
+        }
+    ]
+}

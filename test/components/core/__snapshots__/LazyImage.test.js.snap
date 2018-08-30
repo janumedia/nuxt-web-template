@@ -1,0 +1,41 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`LazyImage.vue should render LazyImage init state 1`] = `
+<div class="lazy-image">
+  <div>
+    <img src="/images/assets/3x2-placeholder.svg" data-src="image.jpg" alt="image title" data-pin-nopin="true">
+  </div>
+</div>
+`;
+
+exports[`LazyImage.vue should render LazyImage on ready state 1`] = `
+<div class="lazy-image">
+  <div style="background-image: url(/images/assets/3x2-placeholder.svg); background-repeat: no-repeat; background-size: cover; background-position: center;">
+    <img src="/images/assets/3x2-placeholder.svg" alt="image title" data-pin-nopin="true" class="image-loading">
+  </div>
+</div>
+`;
+
+exports[`LazyImage.vue should render LazyImage when load complete 1`] = `
+<div class="lazy-image">
+  <div style="background-image: url(image.jpg); background-repeat: no-repeat; background-size: cover; background-position: center;">
+    <img src="/images/assets/3x2-placeholder.svg" alt="image title" data-pin-nopin="true" class="image-loaded">
+  </div>
+</div>
+`;
+
+exports[`LazyImage.vue should render LazyImage when load error 1`] = `
+<div class="lazy-image">
+  <div style="background-image: url(/images/assets/3x2-placeholder.svg); background-repeat: no-repeat; background-size: cover; background-position: center;">
+    <img src="/images/assets/3x2-placeholder.svg" alt="image title" data-pin-nopin="true" class="image-loading">
+  </div>
+</div>
+`;
+
+exports[`LazyImage.vue should render LazyImage with square size 1`] = `
+<div class="lazy-image">
+  <div>
+    <img src="/images/assets/3x2-placeholder.svg" data-src="image.jpg" alt="image title" data-pin-nopin="true">
+  </div>
+</div>
+`;

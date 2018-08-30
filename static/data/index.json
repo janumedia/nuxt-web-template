@@ -1,0 +1,68 @@
+{
+    "title": "Nusa Penida Tour Guide",
+    "desc": "Totalling some 200 square kilometres, Nusa Penida is much larger than the better known Nusa Lembongan. However, tourist infrastructure is very limited here but growing fast.\n\nDue to a lack of natural fresh water, little is grown or produced on Nusa Penida, and even some basic foodstuffs come in by boat. Visitors should therefore expect higher prices than in Bali, and not bank on any tourism-related luxury items being available for purchase here.",
+    "metaImage": "https://www.cherysabalitour.com/images/contents/raja-lima2.jpg",
+    "body": [
+        {
+            "listBox": [
+                {
+                    "slides": [
+                        {"name": "Peguyangan Water Spring", "img": "https://firebasestorage.googleapis.com/v0/b/nuxt-web-template.appspot.com/o/slides%2Fpeguyangan-waterfall-3.jpg?alt=media&token=82e2b880-f354-468e-a857-f341a108e239", "credit": "@wanderersandwarriors"},
+                        {"name": "Kelingking Beach", "img": "https://firebasestorage.googleapis.com/v0/b/nuxt-web-template.appspot.com/o/slides%2Fklingking-beach.jpg?alt=media&token=0608592e-0bca-43ce-b535-857065b67ef5"},
+                        {"name": "Angel Billabong", "img": "https://firebasestorage.googleapis.com/v0/b/nuxt-web-template.appspot.com/o/slides%2Fangel-billabong.jpg?alt=media&token=9d4b2f99-3667-464e-9d6a-5c4b6850bf84"},
+                        {"name": "Broken Beach", "img": "https://firebasestorage.googleapis.com/v0/b/nuxt-web-template.appspot.com/o/slides%2Fbroken-beach.jpg?alt=media&token=d5c744e6-9fd4-4df0-8552-03659675f6d7"},
+                        {"name": "Crystal Bay Beach", "img": "https://firebasestorage.googleapis.com/v0/b/nuxt-web-template.appspot.com/o/slides%2Fcrystal-bay-beach-2.jpg?alt=media&token=be8ffb8f-17e9-4b85-bf4a-9dff7f38348a"}
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Recommendations",
+            "chessGrid": [
+                {
+                    "name": "Angel Billabong",
+                    "img": "https://firebasestorage.googleapis.com/v0/b/nuxt-web-template.appspot.com/o/angel-billabong-mid-sq.jpg?alt=media&token=ef70e878-0de2-4b0c-bed8-513d3bc21758",
+                    "desc": "a spectacular rock formation on Nusa Penida island's southwestern cliff edges. It's nearby Pasih Uug (Broken Beach), another popular site with unique limestone formations. The naturally formed rock lagoon offers a scenic seascape. You can descend into its crystal-clear rock pools for a swim or a soak",
+                    "btnLabel": "View details",
+                    "url": "/destinations/angel-billabong"
+                },
+                {
+                    "name": "Broken Beach",
+                    "img": "https://firebasestorage.googleapis.com/v0/b/nuxt-web-template.appspot.com/o/broken-beach-mid-sq.jpg?alt=media&token=9769ac16-f00a-494d-afb1-709e96327d6e",
+                    "desc": "Broken Beach also popular as Pasih Uug is a scenic coastal formation on the southwestern edge of Nusa Penida island. The spot is marked by a hilly arch-like rock formation, which is the distinguishable landmark of the area. Set over the crashing waves of the open Indian Ocean.",
+                    "btnLabel": "View details",
+                    "url": "/destinations/broken-beach"
+                },
+                {
+                    "name": "Kelingking Beach",
+                    "img": "https://firebasestorage.googleapis.com/v0/b/nuxt-web-template.appspot.com/o/klingking-beach-mid-sq.jpg?alt=media&token=fe9953a8-95d2-4c70-97c8-ae8df6816bdb",
+                    "desc": "Kelingking Beach is a hidden beach in the village of Bunga Mekar, on the southwestern coast of Nusa Penida island. You can enjoy one of the most breath-taking views over the hills and small strip of white sand from atop a hill of the same name. This unique formation is reminiscent of a Tyrannosaurus Rex head, hence its nickname ‘T-Rex Bay’.",
+                    "btnLabel": "View details",
+                    "url": "/destinations/kelingking-beach"
+                },
+                {
+                    "name": "Angel Billabong",
+                    "img": "https://firebasestorage.googleapis.com/v0/b/nuxt-web-template.appspot.com/o/angel-billabong-mid-sq.jpg?alt=media&token=ef70e878-0de2-4b0c-bed8-513d3bc21758",
+                    "desc": "a spectacular rock formation on Nusa Penida island's southwestern cliff edges. It's nearby Pasih Uug (Broken Beach), another popular site with unique limestone formations. The naturally formed rock lagoon offers a scenic seascape. You can descend into its crystal-clear rock pools for a swim or a soak",
+                    "btnLabel": "View details",
+                    "url": "/destinations/angel-billabong"
+                },
+                {
+                    "name": "Broken Beach",
+                    "img": "https://firebasestorage.googleapis.com/v0/b/nuxt-web-template.appspot.com/o/broken-beach-mid-sq.jpg?alt=media&token=9769ac16-f00a-494d-afb1-709e96327d6e",
+                    "desc": "Broken Beach also popular as Pasih Uug is a scenic coastal formation on the southwestern edge of Nusa Penida island. The spot is marked by a hilly arch-like rock formation, which is the distinguishable landmark of the area. Set over the crashing waves of the open Indian Ocean.",
+                    "btnLabel": "View details",
+                    "url": "/destinations/broken-beach"
+                }
+            ]
+        }
+    ],
+    "extras": [
+        {
+            "name": "Review",
+            "googleReview": {
+                "placeID": "ChIJ0xkTTRlx0i0Re3sZsgY3Olw"
+            }
+        }
+    ]
+}

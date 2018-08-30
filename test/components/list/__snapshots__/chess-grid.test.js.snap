@@ -1,0 +1,30 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`chess-grid.vue should render chess-grid init state 1`] = `
+<div class="chess-grid">
+  <div class="chess-grid__item">
+    <div class="chess-grid__item-box  chess-grid__item-box--pull">
+      <linkedimage-stub verticalalign="true" square="true" title="Name A" url="/link/to/a" src="imageA.jpg"></linkedimage-stub>
+    </div>
+    <div class="chess-grid__item-box chess-grid__item-info  chess-grid__item-box--push">
+      <div class="v-align-pos">
+        <h3>Name A</h3>
+        <p>Description A</p>
+        <button-stub url="/link/to/a" label="View details"></button-stub>
+      </div>
+    </div>
+  </div>
+  <div class="chess-grid__item">
+    <div class="chess-grid__item-box ">
+      <linkedimage-stub verticalalign="true" square="true" title="Name B" url="/link/to/b" src="imageB.jpg"></linkedimage-stub>
+    </div>
+    <div class="chess-grid__item-box chess-grid__item-info ">
+      <div class="v-align-pos">
+        <h3>Name B</h3>
+        <p>Description B</p>
+        <button-stub url="/link/to/b" label="View details"></button-stub>
+      </div>
+    </div>
+  </div>
+</div>
+`;

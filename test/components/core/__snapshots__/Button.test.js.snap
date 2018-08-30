@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Button.vue should render button type submit 1`] = `<button type="submit" class=" button--submit"><span>button label</span></button>`;
+
+exports[`Button.vue should render button with a href 1`] = `
+<button type="" class="">
+  <a href="http://domain.com" target="_blank" title="button label" rel="noopener">button label</a>
+</button>
+`;
+
+exports[`Button.vue should render button with primary theme 1`] = `
+<button type="" class="button--primary">
+  <a href="http://domain.com" target="_blank" title="button label" rel="noopener">button label</a>
+</button>
+`;
+
+exports[`Button.vue should render button with router 1`] = `
+<button type="" class="">
+  <nuxtlink-stub title="button label" to="router/link">button label</nuxtlink-stub>
+</button>
+`;
