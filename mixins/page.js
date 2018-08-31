@@ -60,6 +60,9 @@ export default {
         if(fading) await fading;
         
         this.$store.dispatch("setLoading", false);
+
+        //always begin on top
+        window.scrollTo(0, 0);
         
         //hide all
         utils.setOpacity(document.querySelector(".logo"), 0);
