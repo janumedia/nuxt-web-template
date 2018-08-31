@@ -1,10 +1,10 @@
 <template>
     <section v-if="list" :class="!$store.state.pageData.layout ? 'section-body' : ''">
-        <div v-if="!$store.state.pageData.layout" class="preheader-hidden">
-            <h2>Hot Tour Destination in Nusa Penida</h2>
+        <div v-if="!$store.state.pageData.layout && $store.state.pageData.title" class="preheader-hidden">
+            <h2>{{ $store.state.pageData.title }}</h2>
         </div>
         <div v-for="(item, index) in list" :key="`b_${index}`" :class="index > 0? 'next' : ''">
-            <div v-if="(item.chessGrid || item.tilesGrid) && item.name && index > 0" class="preheader" style="margin-top: 40px">
+            <div v-if="item.name" class="preheader" style="margin-top: 40px">
                 <h2>{{item.name}}</h2>
             </div>
             <chess-grid v-if="item.chessGrid" :list="item.chessGrid"/>
@@ -22,6 +22,12 @@
             </div>
             <div v-if="item.googleReview">
                 <google-review :placeID="item.googleReview.placeID"/>
+            </div>
+            <div v-if="item.table">
+                <Table 
+                    :headers="item.tableHeaders"
+                    :items="item.table"
+                />
             </div>
         </div>
     </section>

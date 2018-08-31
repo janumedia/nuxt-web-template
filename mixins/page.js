@@ -48,9 +48,6 @@ export default {
                 return utils.fadeOut(document.querySelector("#header"), true)
             })
             .then(() => {
-                if(to.name === from.name) {
-                    window.scrollTo(0, 0)
-                }
                 this.$store.dispatch("setLoading", true);
                 fading = null;
                 if(next) next();
@@ -58,8 +55,8 @@ export default {
         }
     },
     async mounted(){
-
-        //wait for pendong fading
+        
+        //wait if still fading
         if(fading) await fading;
         
         this.$store.dispatch("setLoading", false);
@@ -85,6 +82,11 @@ export default {
             return utils.fadeIn(document.querySelector("#footer"))
         })
     },
+    beforeRouteUpdate: async function (to, from, next) {
+        //wait for pendong fading
+        if(fading) await fading;
+        next();
+    },
     beforeRouteLeave: function (to, from, next) {
         this.$store.dispatch("setPageData", {...this.pageData, title: "Loading"});
         this.fadeOut(to, from, next)
@@ -97,7 +99,7 @@ export default {
             if(from.path != to.path) {
                 this.$store.dispatch("setPageData", {...this.pageData, title: "Loading"});
                 this.fadeOut(to, this.$route);     
-            }      
+            }
         }
     }
 }

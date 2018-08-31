@@ -83,7 +83,7 @@ export default {
         },
         onScroll() {
             if(!inViewPort(this.$el)) return;
-            const tiles = document.querySelectorAll(".tile--hide");
+            const tiles = this.$el.querySelectorAll(".tile--hide");
             //process items in visible area
             [].slice.call(tiles).filter(item => {
                 return inViewPort(item, 50)
@@ -103,9 +103,9 @@ export default {
         },
         adjustSize() {
             if(this.thumbnailMode) return;
-            let tiles = document.querySelectorAll(".tile");
+            let tiles = this.$el.querySelectorAll(".tile");
             if(tiles.length == 0) return
-            let buttonGroup = document.querySelectorAll(".button-group");
+            let buttonGroup = this.$el.querySelectorAll(".button-group");
             [].slice.call(tiles).map((tile) => {
                 tile.style.height = "";
                 return tile;

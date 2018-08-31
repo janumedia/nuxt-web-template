@@ -21,10 +21,5 @@ export default {
         return {
             list: data.menu
         }
-    },
-    watch: {
-        "$route"(to, from) {
-            window.scrollTo(0, 0);
-        }
     }
 }

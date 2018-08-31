@@ -10,7 +10,7 @@
             <div v-if="item.subname" class="list-box__item-subname" v-html="item.subname"></div>
             <div v-if="item.desc" class="list-box__item-desc" v-html="item.desc"></div>
             <div v-if="item.list">
-                <span v-if="item.listname"><br>Inclusions:</span>
+                <span v-if="item.listname"><br>{item.listname}:</span>
                 <ul>
                     <li v-for="(subitem, i) in item.list" v-html="subitem" :key="i"></li>
                 </ul>
