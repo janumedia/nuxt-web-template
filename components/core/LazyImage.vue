@@ -141,9 +141,9 @@ img {
         opacity: 0;
         visibility: hidden;
     }
-    &.done {
+    /*&.done {
         visibility: hidden;
-    }
+    }*/
 }
 </style>
 

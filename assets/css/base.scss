@@ -32,8 +32,9 @@ $errorColor: red;
     -ms-transition: $properties;
     transition: $properties;
     //fix flickring issue https://goo.gl/7yCcm7
+    //CoreAnimation issue on safari https://stackoverflow.com/a/24469750/1578100
     -webkit-transform-style: preserve-3d;
-    -webkit-transform: translate3D(0, 0, 0);
+    -webkit-transform: translate3D(0, 0);
     -webkit-backface-visibility: hidden;
 }
 @mixin transition-duration($value) {
