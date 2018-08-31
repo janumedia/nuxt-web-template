@@ -1,0 +1,131 @@
+{
+    "title": "News, Different Layout Example",
+    "metaImage": "https://firebasestorage.googleapis.com/v0/b/nuxt-web-template.appspot.com/o/slides%2Fcrystal-bay-beach-2.jpg?alt=media&token=be8ffb8f-17e9-4b85-bf4a-9dff7f38348a",
+    "layout": "book-layout",
+    "body": [
+        {
+            "listBox": [
+                {
+                    "note": "Components Examples. This page also use different layout page example (without grey background)."
+                }
+            ]
+        },
+        {
+            "name": "Slide-Images",
+            "slides": [
+                {"name": "Peguyangan Water Spring", "img": "https://firebasestorage.googleapis.com/v0/b/nuxt-web-template.appspot.com/o/slides%2Fpeguyangan-waterfall-3.jpg?alt=media&token=82e2b880-f354-468e-a857-f341a108e239", "credit": "@wanderersandwarriors"},
+                {"name": "Kelingking Beach", "img": "https://firebasestorage.googleapis.com/v0/b/nuxt-web-template.appspot.com/o/slides%2Fklingking-beach.jpg?alt=media&token=0608592e-0bca-43ce-b535-857065b67ef5"},
+                {"name": "Angel Billabong", "img": "https://firebasestorage.googleapis.com/v0/b/nuxt-web-template.appspot.com/o/slides%2Fangel-billabong.jpg?alt=media&token=9d4b2f99-3667-464e-9d6a-5c4b6850bf84"},
+                {"name": "Broken Beach", "img": "https://firebasestorage.googleapis.com/v0/b/nuxt-web-template.appspot.com/o/slides%2Fbroken-beach.jpg?alt=media&token=d5c744e6-9fd4-4df0-8552-03659675f6d7"},
+                {"name": "Crystal Bay Beach", "img": "https://firebasestorage.googleapis.com/v0/b/nuxt-web-template.appspot.com/o/slides%2Fcrystal-bay-beach-2.jpg?alt=media&token=be8ffb8f-17e9-4b85-bf4a-9dff7f38348a"}
+            ]
+        },
+        {
+            "name": "Chess-Grid",
+            "chessGrid": [
+                {
+                    "name": "Angel Billabong",
+                    "img": "https://firebasestorage.googleapis.com/v0/b/nuxt-web-template.appspot.com/o/angel-billabong-mid-sq.jpg?alt=media&token=ef70e878-0de2-4b0c-bed8-513d3bc21758",
+                    "desc": "a spectacular rock formation on Nusa Penida island's southwestern cliff edges. The naturally formed rock lagoon offers a scenic seascape. You can descend into its crystal-clear rock pools for a swim or a soak",
+                    "btnLabel": "View details",
+                    "url": "/destinations/angel-billabong"
+                },
+                {
+                    "name": "Broken Beach",
+                    "img": "https://firebasestorage.googleapis.com/v0/b/nuxt-web-template.appspot.com/o/broken-beach-mid-sq.jpg?alt=media&token=9769ac16-f00a-494d-afb1-709e96327d6e",
+                    "desc": "Broken Beach also popular as Pasih Uug is a scenic coastal formation on the southwestern edge of Nusa Penida island. The spot is marked by a hilly arch-like rock formation, which is the distinguishable landmark of the area.",
+                    "btnLabel": "View details",
+                    "url": "/destinations/broken-beach"
+                },
+                {
+                    "name": "Kelingking Beach",
+                    "img": "https://firebasestorage.googleapis.com/v0/b/nuxt-web-template.appspot.com/o/klingking-beach-mid-sq.jpg?alt=media&token=fe9953a8-95d2-4c70-97c8-ae8df6816bdb",
+                    "desc": "Kelingking Beach is a hidden beach in the village of Bunga Mekar, on the southwestern coast of Nusa Penida island. You can enjoy one of the most breath-taking views over the hills and small strip of white sand from atop a hill of the same name.",
+                    "btnLabel": "View details",
+                    "url": "/destinations/kelingking-beach"
+                }
+            ]
+        },
+        {
+            "name": "Tiles-Grid: default",
+            "tilesGrid": [
+                {
+                    "name": "Semabu Hills Hotel",
+                    "img": "https://firebasestorage.googleapis.com/v0/b/nuxt-web-template.appspot.com/o/3x2%2Fhotel-semabu-hills-mid.jpg?alt=media&token=951d7b8e-6419-431c-8f98-fa748fe855df",
+                    "desc": "It can be argued that Bali is as close to heaven on earth as it gets and we at Semabu Hills have put in place the crowning glory of this picturesque getaway.\n\nJust 30 minutes off the east coast of Bali on the tropical island of Nusa Penida, Semabu Hills is proud to host you and give you an experience to cherish.",
+                    "primaryUrl": "/contact",
+                    "primaryBtnLabel": "Book"
+                },
+                {
+                    "name": "Bintang Bungalow Hotel",
+                    "img": "https://firebasestorage.googleapis.com/v0/b/nuxt-web-template.appspot.com/o/3x2%2Fhotel-bintang-bungalows-mid.jpg?alt=media&token=94501405-146b-4216-a3b7-41dacbd09020",
+                    "desc": "Bintang Bungalow is located in Toyapakeh just about 800 meters from Crystal Bay. The hotel is a 15-minutes drive to Gamat Bay and 30-minutes to Angel's Billabong.\n\nFeatures an outdoor pool. You can enjoy meals at the restaurant at the accommodation.",
+                    "primaryUrl": "/contact",
+                    "primaryBtnLabel": "Book"
+                },
+                {
+                    "name": "Caspla Beach Hotel",
+                    "img": "https://firebasestorage.googleapis.com/v0/b/nuxt-web-template.appspot.com/o/3x2%2Fhotel-caspla-beach-mid.jpg?alt=media&token=24fb0632-1f9d-4012-9277-fcc94103bc27",
+                    "desc": "Caspla Beach Hotel, Restaurant & Bar is built seashore side on the easthern most tip of Bali, that is Nusa Penida Island.\n\nEnjoy luxury hotels on east Bali and an unforgettable holiday in Caspla Beach Hotel, Bar & Restaurant unique, elegant, tropical style, ocean front bungalows. the hotel building full of wood, here you can enjoy free pool, eating at the beachside restaurant.",
+                    "primaryUrl": "/contact",
+                    "primaryBtnLabel": "Book"
+                }
+            ]
+        },
+        {
+            "name": "Tiles-Grid: num-columns:3, square:true, thumbnail-Mode:true",
+            "numColumns": 3,
+            "square": true,
+            "thumbnailMode": true,
+            "tilesGrid": [
+                {
+                    "name": "Angel Billabong",
+                    "img": "https://firebasestorage.googleapis.com/v0/b/nuxt-web-template.appspot.com/o/angel-billabong-mid-sq.jpg?alt=media&token=ef70e878-0de2-4b0c-bed8-513d3bc21758",
+                    "url": "/destinations/angel-billabong"
+                },
+                {
+                    "name": "Broken Beach",
+                    "img": "https://firebasestorage.googleapis.com/v0/b/nuxt-web-template.appspot.com/o/broken-beach-mid-sq.jpg?alt=media&token=9769ac16-f00a-494d-afb1-709e96327d6e",
+                    "url": "/destinations/broken-beach"
+                },
+                {
+                    "name": "Kelingking Beach",
+                    "img": "https://firebasestorage.googleapis.com/v0/b/nuxt-web-template.appspot.com/o/klingking-beach-mid-sq.jpg?alt=media&token=fe9953a8-95d2-4c70-97c8-ae8df6816bdb",
+                    "url": "/destinations/kelingking-beach"
+                },
+                {
+                    "name": "Angel Billabong",
+                    "img": "https://firebasestorage.googleapis.com/v0/b/nuxt-web-template.appspot.com/o/angel-billabong-mid-sq.jpg?alt=media&token=ef70e878-0de2-4b0c-bed8-513d3bc21758",
+                    "url": "/destinations/angel-billabong"
+                },
+                {
+                    "name": "Broken Beach",
+                    "img": "https://firebasestorage.googleapis.com/v0/b/nuxt-web-template.appspot.com/o/broken-beach-mid-sq.jpg?alt=media&token=9769ac16-f00a-494d-afb1-709e96327d6e",
+                    "url": "/destinations/broken-beach"
+                }
+            ]
+        },
+        {
+            "name": "Google-Map",
+            "googleMap": {
+                "lat": -8.733426,
+                "long": 115.4470798
+            }
+        },
+        {
+            "name": "Google-Review",
+            "googleReview": {
+                "placeID": "ChIJPeFviSBH0i0R0h1hnHjxmFw"
+            }
+        },
+        {
+            "name": "Table",
+            "tableHeaders": ["No.", "Name", "Price"],
+            "table": [
+                {"p": 1, "d":"Banana", "i":"Rp 1.000"},
+                {"p": 2, "d":"Pianaple", "i":"Rp 2.400"},
+                {"p": 3, "d":"Mangostin", "i":"Rp 1.500"}
+            ]
+        }
+    ]
+}

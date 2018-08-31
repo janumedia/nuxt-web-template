@@ -14,6 +14,9 @@ module.exports = {
             name: "Hotels", path: "/hotels"
         },
         {
+            name: "Components Guide", path: "/guides"
+        },
+        {
             name: "Contact", path: "/contact"
         }
     ]
