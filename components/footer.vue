@@ -16,7 +16,7 @@
             <address>{{ company.address }}<br v-if="company.address2">{{ company.address2 }}</address>
         </div>
         <div class="powered">
-            Powered by <a href="http://nuxtjs.org/" target="_blank" title="NuxtJS" rel="noopener">NuxtJS</a> and <a href="https://heroku.com/" target="_blank" title="Heroku" rel="noopener">Heroku</a>
+            Powered by <a href="https://janumedia.com/" target="_blank" title="Janumedia" rel="noopener">JanuMedia</a> with <a href="http://nuxtjs.org/" target="_blank" title="NuxtJS" rel="noopener">NuxtJS</a>
         </div>
         <a href="#" class="btn-back-top" title="back to top"><img src="/images/assets/icon-expand-white.svg"/></a>
     </footer>
