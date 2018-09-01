@@ -83,7 +83,7 @@ export default {
             });
         }
     },
-    async mounted(){
+    mounted(){
         
         this.$store.dispatch("setLoading", false);
 
