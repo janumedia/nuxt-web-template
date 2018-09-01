@@ -2,7 +2,7 @@
     "presets": [
         ["env", { "modules": false }]
     ],
-    "plugins": ["transform-object-rest-spread"],
+    "plugins": ["syntax-object-rest-spread"],
     "env": {
         "test": {
             "presets": [
