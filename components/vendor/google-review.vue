@@ -21,24 +21,32 @@
     </div>
 </template>
 <script>
+import {mapState} from "vuex"
 import Loader from "@/assets/js/utils/script-loader"
 import $ from "jquery"
 import {registerListener, unRegisterListener, inViewPort} from "@/assets/js/events/events"
 
 export default {
-    props: ["placeID"],
+    props: {
+        placeID: {
+            type: String,
+            required: true
+        }
+    },
     data() {
         return {
             url: "https://maps.googleapis.com/maps/api/js?",
-            key: "AIzaSyAF7_hvatl9Wrn2mRD_xi1wzHTfktUp5Jg",
             reviews: [],
             intervalID: null,
         }
     },
+    computed: {
+        ...mapState(['GOOGLE_KEY'])
+    },
     methods: {
         googleMapCallback() {
             let service, months = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec']
-            service = new google.maps.places.PlacesService(document.getElementById("google-review"))
+            service = new google.maps.places.PlacesService(this.$el)
             service.getDetails({ placeId: this.placeID }, (place, status) => {
                 this.reviews = place.reviews.map(review => {
                     let t = new Date(review.time * 1000)
@@ -52,8 +60,8 @@ export default {
         },
         startSlide() {
             if(this.intervalID) return;
-            if(document.querySelectorAll(".google-review__item").length < 2) return;
-            let text = document.querySelector(".google-review__text").textContent;
+            if(this.$el.querySelectorAll(".google-review__item").length < 2) return;
+            let text = this.$el.querySelector(".google-review__text").textContent;
             let totalWords = text ? text.split(" ").length : 1;
             // average reading speed 130 words per minute
             let delay = totalWords / 130 * 60 * 1000;    
@@ -79,7 +87,7 @@ export default {
         }
     },
     mounted() {
-        Loader.load(this.url + "&key=" + this.key + "&libraries=places", this.googleMapCallback)
+        Loader.load(this.url + "&key=" + this.GOOGLE_KEY + "&libraries=places", this.googleMapCallback)
         registerListener("scroll", this.onScroll);
     },
     beforeDestroy(){

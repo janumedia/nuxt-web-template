@@ -1,4 +1,4 @@
-const webTitle = "Nusa Penida Tourism Board"
+const webTitle = "Nuxt Web Template Example"
 
 module.exports = {
     head: {
@@ -9,7 +9,7 @@ module.exports = {
         titleTemplate: `%s | ${webTitle}`,
         meta: [
             { charset: 'utf-8' },
-            { name:"google-site-verification", content:"ikaNaw186Qjr7RE7CXcAZ2b1VSrYN8oakmVc9lYVvK0" },
+            { name:"google-site-verification", content:"YOUR_GOOGLE_SITE_VERIFICATION_HERE" },
             { name: 'viewport', content: 'width=device-width, initial-scale=1' },
             //manifest theme
             { name: 'apple-mobile-web-app-title', content: webTitle },

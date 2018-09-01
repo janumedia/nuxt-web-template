@@ -90,7 +90,7 @@ export default {
             return className + " list-box__item--hide" 
         },
         onScroll() {
-            let items = document.querySelectorAll(".list-box__item--hide");
+            let items = this.$el.querySelectorAll(".list-box__item--hide");
             [].slice.call(items).map((item, index) => {
                 if(inViewPort(item, 50)) {
                     setTimeout(() => {

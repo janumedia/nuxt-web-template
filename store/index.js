@@ -3,10 +3,18 @@ import Vuex from 'vuex'
 const createStore = () => {
     
     const state = {
-        GA_CODE:      "YOUR_GA_CODE",
-        WEB_ADDRESS:  "YOUR_WEB_ADDRESS",
-        pageData: {},
-        loading: true,
+        GA_CODE     : "YOUR_GA_CODE",
+        GOOGLE_KEY  : "AIzaSyAF7_hvatl9Wrn2mRD_xi1wzHTfktUp5Jg", // REPLACE_WITH_YOUR_GOOGLE_KEY
+        WEB_ADDRESS : "YOUR_WEB_ADDRESS",
+        company     : {
+            name    : "Nusa Penida Tourism Board",
+            address : "Klungkung Regency",
+            address2: "Nusa Penida, Bali - Indonesia",
+            email   : "mail@company.com",
+            phone   : "+62 8888888"
+        },
+        pageData    : {},
+        loading     : true,
     }
 
     const getters = {}

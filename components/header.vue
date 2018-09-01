@@ -1,9 +1,9 @@
 <template>
     <header id="header">
         <div class="logo">
-            <nuxt-link to="/" :title="title">
+            <nuxt-link to="/" :title="$store.state.company.name">
                 <figure>
-                    <img src="/images/assets/logo.svg" :alt="title" data-pin-nopin="true">
+                    <img src="/images/assets/logo.svg" :alt="$store.state.company.name" data-pin-nopin="true">
                 </figure>    
             </nuxt-link>
         </div>
@@ -32,11 +32,6 @@
 <script>
 export default {
     props: ["list"],
-    data() {
-        return {
-            title: "Nusa Penida Tourism Board"
-        }
-    },
     methods: {
         getActiveClass(item) {
             if(item.submenu) {

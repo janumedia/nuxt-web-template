@@ -2,6 +2,7 @@
     <div id="map"></div>
 </template>
 <script>
+import {mapState} from "vuex"
 import Loader from "@/assets/js/utils/script-loader"
 export default {
     props: {
@@ -17,8 +18,10 @@ export default {
     data() {
         return {
             url: "https://maps.googleapis.com/maps/api/js?",
-            key: "AIzaSyAF7_hvatl9Wrn2mRD_xi1wzHTfktUp5Jg"
         }
+    },
+    computed: {
+        ...mapState(['GOOGLE_KEY'])
     },
     methods: {
         googleMapCallback() {
@@ -32,7 +35,7 @@ export default {
         }
     },
     mounted() {
-        Loader.load(this.url + "&key=" + this.key + "&libraries=places", this.googleMapCallback)
+        Loader.load(this.url + "&key=" + this.GOOGLE_KEY + "&libraries=places", this.googleMapCallback)
     },
 }
 </script>

@@ -12,8 +12,8 @@
             <li><nuxt-link to="/contact" :class="getActiveClass('contact')" title="contact">Contact</nuxt-link></li>
         </ul>
         <div>
-            &copy; {{ fullYear }} Nusa Penida Tourism Board All Rights Reserved<br>
-            <address>Klungkung Regency, <br>Nusa Penida, Bali - Indonesia</address>
+            &copy; {{ fullYear }} {{ company.name }} All Rights Reserved<br>
+            <address>{{ company.address }}<br v-if="company.address2">{{ company.address2 }}</address>
         </div>
         <div class="powered">
             Powered by <a href="http://nuxtjs.org/" target="_blank" title="NuxtJS" rel="noopener">NuxtJS</a> and <a href="https://heroku.com/" target="_blank" title="Heroku" rel="noopener">Heroku</a>
@@ -22,6 +22,7 @@
     </footer>
 </template>
 <script>
+import { mapState } from 'vuex'
 import $ from "jquery"
 import {registerListener, unRegisterListener, inViewPort} from "@/assets/js/events/events"
 import utils from "@/assets/js/utils/utils"
@@ -32,6 +33,9 @@ export default {
             intervalID: null,
             fullYear: new Date().getFullYear()
         }
+    },
+    computed: {
+        ...mapState(['company'])
     },
     methods: {
         onScroll() {
@@ -50,7 +54,7 @@ export default {
         }
     },
     mounted() {
-        this.scrollBtn = document.querySelector(".btn-back-top");
+        this.scrollBtn = this.$el.querySelector(".btn-back-top");
         this.scrollBtn.style.display = "none";
         $(this.scrollBtn).click(function(e)
         {

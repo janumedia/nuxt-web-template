@@ -1,9 +1,35 @@
 import {mapState} from "vuex";
+import axios from 'axios'
 import utils from "@/assets/js/utils/utils"
 
 let fading;
 
 export default {
+    async asyncData({store, route, error}) {
+        try {
+            const {path, name} = route;
+            store.dispatch("setNextLink", {path, name});
+            
+            let fullPath = route.fullPath == "/" ? "/index" : route.fullPath;
+            if(fullPath.slice(-1) == "/") fullPath = path.substr(0, fullPath.length - 1);
+            
+            const url = `${process.env.baseUrl}/data${fullPath}.json`
+            const {data} = await axios.get(url);
+
+            store.dispatch("setPageData", data);
+            
+            //must have props body and extras
+            if(!data.body) data.body = null;
+            if(!data.extras) data.extras = null;
+
+            return data;
+
+        } catch(e) {
+            console.error("ERROR", e.message);
+        }
+        store.dispatch("setLoading", false);
+        error({ statusCode: 404, message: "Page NOT found" });
+    },
     head() {
         return {
             title: this.removeHTMLTags(this.pageData.title),
@@ -23,7 +49,7 @@ export default {
         }
     },
     computed: {
-        ...mapState(['initiated', 'loading', 'pageData', 'nextLink', 'WEB_ADDRESS', 'GA_CODE'])
+        ...mapState(['initiated', 'loading', 'pageData', 'nextLink', 'company', 'WEB_ADDRESS', 'GA_CODE'])
     },
     methods: {
         removeHTMLTags(s) {
@@ -86,7 +112,7 @@ export default {
         })
     },
     beforeRouteUpdate: async function (to, from, next) {
-        //wait for pendong fading
+        //wait for fading done
         if(fading) await fading;
         next();
     },
