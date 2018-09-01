@@ -15,6 +15,9 @@ export default {
             
             const url = `${process.env.baseUrl}/data${fullPath}.json`
             const {data} = await axios.get(url);
+           
+            //wait if still fading
+            if(fading) await fading;
 
             store.dispatch("setPageData", data);
             
@@ -81,9 +84,6 @@ export default {
         }
     },
     async mounted(){
-        
-        //wait if still fading
-        if(fading) await fading;
         
         this.$store.dispatch("setLoading", false);
 
